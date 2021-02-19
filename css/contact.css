@@ -82,12 +82,12 @@ form>div {
 form input,
 form textarea {
     border: none;
-    padding: 0.5rem;
+    padding: 1rem;
     margin-top: 0.25rem;
     color: var(--black);
     width: 100%;
-    border-radius: 15px;
-    box-shadow: inset 0px 0px 0px 3px var(--light);
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 0px 5px var(--light);
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
     transition: var(--transitionSpeed);
     outline: none;
@@ -97,12 +97,12 @@ form input:hover,
 form textarea:hover,
 form input:focus,
 form textarea:focus {
-    box-shadow: inset 0px 0px 0px 3px var(--primary);
+    box-shadow: inset 0px 0px 0px 5px var(--primary);
 }
 
 form input[type=submit] {
     margin-top: 1rem;
-    box-shadow: inset 0px 0px 0px 3px var(--primary);
+    box-shadow: inset 0px 0px 0px 5px var(--primary);
     font-size: x-large;
     color: var(--light);
     cursor: pointer;
