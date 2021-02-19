@@ -33,3 +33,10 @@ nav:hover .nav-link {
 nav:hover .nav-link>span {
     display: inline;
 }
+
+main {
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;
+    z-index: 4;
+}

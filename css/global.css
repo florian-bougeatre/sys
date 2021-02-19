@@ -16,18 +16,23 @@
 }
 
 html {
-    width: 100vh;
-    min-height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 body {
     margin: 0;
-    width: 100vh;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 7.5rem auto 0 0;
+    grid-template-areas: ". main . .";
     font-family: 'Merriweather', serif;
     background: linear-gradient(0deg, var(--primary) 0%, var(--light) 100%);
+}
+
+main {
+    grid-area: main;
 }
 
 .wave {
@@ -155,4 +160,8 @@ nav ul li:last-child {
 
 .titre img {
     width: 100%;
+}
+
+hr {
+    background-color: var(--white);
 }
