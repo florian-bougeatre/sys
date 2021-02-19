@@ -1,0 +1,35 @@
+nav {
+    position: fixed;
+    width: 7.5rem;
+    transition: var(--transitionSpeed) ease;
+}
+
+.nav-link {
+    justify-content: center;
+}
+
+.nav-link>i {
+    margin: 0;
+}
+
+.titre-lg,
+.titre-sm {
+    transition: var(--transitionSpeed);
+}
+
+.nav-link>span {
+    display: none;
+    transition: fadeIn var(--transitionSpeed);
+}
+
+nav:hover {
+    width: 20rem;
+}
+
+nav:hover .nav-link {
+    justify-content: space-around;
+}
+
+nav:hover .nav-link>span {
+    display: inline;
+}
