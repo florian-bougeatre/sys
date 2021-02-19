@@ -31,6 +31,16 @@ body {
     background: linear-gradient(0deg, var(--primary) 0%, var(--light) 100%);
 }
 
+input,
+textarea {
+    font-family: 'Merriweather', serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-family: 'Merriweather', serif;
+}
+
 main {
     grid-area: main;
 }
@@ -164,4 +174,5 @@ nav ul li:last-child {
 
 hr {
     background-color: var(--white);
+    width: 100%;
 }

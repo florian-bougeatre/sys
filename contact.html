@@ -4,10 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SYSPHERE - Autre</title>
+    <title>SYSPHERE - Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/autre.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <link rel="shortcut icon" href="images/sysphere/cropped-Logo-sysphere-bleu-foncé.png" type="image/x-icon">
 </head>
 
@@ -38,6 +39,44 @@
     </nav>
 
     <main>
+        <div>
+            <h2>Nous contacter</h2>
+            <hr>
+            <div>
+                <div class="phone">
+                    <i class="fas fa-fw text-primary fa-phone-alt"></i>
+                    <h4>(+32) 64 86 00 10</h4>
+                </div>
+                <div class="email">
+                    <i class="fas fa-fw text-primary fa-envelope"></i>
+                    <h4>contact@sysphere.be</h4>
+                </div>
+            </div>
+            <div class="hrou">
+                <hr>
+                <h3>Ou</h3>
+                <hr>
+            </div>
+            <form action="" method="get">
+                <div>
+                    <label title="Obligatoire" for="nom">Nom - Prénom <span>*</span></label>
+                    <input type="text" name="nom" id="nom" placeholder="Nom et Prénom" required>
+                </div>
+                <div>
+                    <label title="Obligatoire" for="email">Email <span>*</span></label>
+                    <input type="email" name="email" id="email" placeholder="exemple@email.be" required>
+                </div>
+                <div>
+                    <label for="sujet">Sujet</label>
+                    <input type="text" name="sujet" id="sujet" placeholder="Sujet du contact">
+                </div>
+                <div>
+                    <label title="Obligatoire" for="message">Message <span>*</span></label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Votre message" required></textarea>
+                </div>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
     </main>
 
     <footer><span>Copyright © Sysphere</span><a href="https://www.sysphere.be/index.php/privacy-policy/" target="_blank">Conditions
