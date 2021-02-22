@@ -26,7 +26,12 @@ nav:hover .nav-link>span {
     display: inline;
 }
 
+nav:hover+main {
+    filter: blur(0.25rem);
+}
+
 main {
+    transition: 100ms;
     padding: 2rem;
     justify-self: center;
     align-self: center;
