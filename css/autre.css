@@ -4,14 +4,6 @@ nav {
     transition: var(--transitionSpeed) ease;
 }
 
-.nav-link {
-    justify-content: center;
-}
-
-.nav-link>i {
-    margin: 0;
-}
-
 .titre-lg,
 .titre-sm {
     transition: var(--transitionSpeed);
