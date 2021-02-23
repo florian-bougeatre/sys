@@ -47,7 +47,6 @@
 
     <main>
         <div class="gauche">
-            <div class="w-100"><a class="text-center" href="">+ Ajouter une entreprise</a></div>
             <table id="table">
                 <thead>
                     <th scope="col">#</th>
@@ -660,7 +659,50 @@
                 </tbody>
             </table>
         </div>
-        <div class="droite"></div>
+        <div class="droite">
+            <div>
+                <h1 class="text-center">Gestion des entreprises</h1>
+                <hr>
+                <p class="text-justify">Cette page vous permet de gérer les différentes entreprises enregistrées.</p>
+                <p class="text-justify">Avec ce tableau il est possible de rechercher une entreprise, de naviguer entre les pages et de trier les colonnes</p>
+                <p class="text-justify">Les deux boutons de la colonne "Actions" vous permet d'afficher et de modifier les informations d'une entreprise, ainsi que de la supprimer si vous le souhaitez. <br><span class="text-muted">(Pas de panique, lors de la suppression, une confirmation vous est
+                        demandée.)</span></p>
+            </div>
+            <hr>
+            <form action="" method="post">
+                <div>
+                    <label for="name">Nom de l'entreprise : </label>
+                    <div>
+                        <input id="name" name="name" type="text" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="tva">Numéro de TVA : </label>
+                    <div>
+                        <input id="tva" name="tva" type="text" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="phone">Numéro de téléphone : </label>
+                    <div>
+                        <input id="phone" name="phone" type="text" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="address">Adresse de l'entreprise : </label>
+                    <div>
+                        <input id="address" name="address" type="text" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="country">Pays de l'entreprise : </label>
+                    <div>
+                        <input id="country" name="country" type="text" required>
+                    </div>
+                </div>
+                <button type="submit">Modifier</button>
+            </form>
+        </div>
     </main>
 
     <footer><span>Copyright © Sysphere</span><a href="https://www.sysphere.be/index.php/privacy-policy/" target="_blank">Conditions
@@ -694,7 +736,8 @@
                         "previous": "Précédente"
                     }
                 },
-                "lengthMenu": [5, 10, 15, 20]
+                "lengthChange": false,
+                "pageLength": 20
             });
         });
     </script>

@@ -102,6 +102,16 @@ footer>*:hover {
     text-align: center;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
+.text-muted {
+    color: var(--dark);
+    font-style: italic;
+    font-size: smaller;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -157,7 +167,7 @@ nav ul li:last-child {
 
 .nav-link span {
     font-size: x-large;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
 }
 
