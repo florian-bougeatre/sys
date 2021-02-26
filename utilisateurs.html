@@ -694,14 +694,23 @@
                 </div>
                 <div>
                     <label for="role">Rôle : </label>
-                    <div>
-                        <input id="role" name="role" type="text" placeholder="Role de l'utilisateur" required>
+                    <div class="custom-select">
+                        <!-- <span class="custom-arrow"><i class="fas fa-chevron-down"></i></span> -->
+                        <select name="role" id="role" size="1" required>
+                            <option value="SUPER_ADMIN">SUPER_ADMIN</option>
+                            <option value="ADMIN">ADMIN</option>
+                            <option value="USER">USER</option>
+                        </select>
                     </div>
                 </div>
                 <div>
                     <label for="company">Entreprise : </label>
-                    <div>
-                        <input id="company" name="company" type="text" placeholder="Entreprise de l'utilisateur" required>
+                    <div class="custom-select">
+                        <!-- <span class="custom-arrow"><i class="fas fa-chevron-down"></i></span> -->
+                        <select name="company" id="company" size="1" required>
+                            <option value="SYSPHERE">SYSPHERE</option>
+                            <option value="TEST">TEST</option>
+                        </select>
                     </div>
                 </div>
                 <input type="submit" value="Modifier">

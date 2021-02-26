@@ -154,7 +154,8 @@ form>div {
     margin-top: 1rem;
 }
 
-form input {
+form input,
+.custom-select {
     border: none;
     padding: 1rem;
     margin-top: 0.25rem;
@@ -168,7 +169,11 @@ form input {
 }
 
 form input:hover,
-form input:focus {
+form input:focus,
+.custom-select:hover,
+.custom-select:focus,
+.custom-select:focus .custom-arrow,
+.custom-select:hover .custom-arrow {
     box-shadow: inset 0px 0px 0px 5px var(--primary);
 }
 
@@ -190,4 +195,19 @@ form input[type=submit]:hover {
 
 form input::placeholder {
     color: var(--black);
+}
+
+.custom-select {
+    background-color: white;
+    padding: 0.5rem;
+}
+
+.custom-select>select {
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    border: none;
+    outline: none;
 }
