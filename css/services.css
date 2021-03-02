@@ -46,6 +46,10 @@ main {
 }
 
 .img>img {
+    height: 150px;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
     border: solid 2px var(--white);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
 }
