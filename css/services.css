@@ -22,6 +22,7 @@ main {
 }
 
 .swiper-slide>div {
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.50);
     padding: 1rem;
     height: 100%;
     color: var(--white);
@@ -33,7 +34,7 @@ main {
 
 .swiper-slide.header {
     grid-template-areas: "head head head";
-    font-size: 60px;
+    font-size: 100px;
     font-weight: bold;
     letter-spacing: 0.5rem;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
@@ -42,15 +43,19 @@ main {
 
 .swiper-slide>.img {
     grid-area: img;
-    background-image: url("//unsplash.it/300/200");
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
+}
+
+.img>img {
+    border: solid 2px var(--white);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
 }
 
 .swiper-slide>.txt {
     grid-area: txt;
-    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
 }
 
 .swiper-slide:nth-child(2n)>div {
