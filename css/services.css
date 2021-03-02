@@ -27,11 +27,19 @@ main {
 
 .r1,
 .r3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light);
     background-color: var(--dark);
 }
 
 .r2,
 .r4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dakr);
     background-color: var(--light);
 }
 
