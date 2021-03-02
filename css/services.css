@@ -18,10 +18,13 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 1.5rem;
+}
+
+.odd {
     grid-template-areas: "r1img r1text r1text""r2text r2text r2img""r3img r3text r3text""r4text r4text r4img";
 }
 
-.swiper-slide:nth-child(2n)>div {
+.even {
     grid-template-areas: "r1text r1text r1img""r2img r2text r2text""r3text r3text r3img""r4img r4text r4text";
 }
 
@@ -48,6 +51,8 @@ main {
 }
 
 .r1-text {
+    padding: 1rem;
+    text-align: justify;
     grid-area: r1text;
 }
 
@@ -56,6 +61,8 @@ main {
 }
 
 .r2-text {
+    padding: 1rem;
+    text-align: justify;
     grid-area: r2text;
 }
 
@@ -64,6 +71,8 @@ main {
 }
 
 .r3-text {
+    padding: 1rem;
+    text-align: justify;
     grid-area: r3text;
 }
 
@@ -72,5 +81,7 @@ main {
 }
 
 .r4-text {
+    padding: 1rem;
+    text-align: justify;
     grid-area: r4text;
 }
