@@ -21,37 +21,44 @@ main {
     grid-template-areas: "txt txt img";
 }
 
-.swiper-slide.header {
-    grid-template-areas: "head head head";
-    font-size: 60px;
-    font-weight: bold;
-    letter-spacing: 0.5rem;
-    color: var(--primary);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
-    text-transform: uppercase;
-}
-
 .swiper-slide>div {
     padding: 1rem;
     height: 100%;
+    color: var(--white);
     background-color: var(--dark);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.swiper-slide.header {
+    grid-template-areas: "head head head";
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.50);
+    text-transform: uppercase;
+}
+
 .swiper-slide>.img {
     grid-area: img;
+    background-image: url("//unsplash.it/300/200");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
 }
 
 .swiper-slide>.txt {
     grid-area: txt;
-}
-
-.swiper-slide.header>div {
-    grid-area: head;
+    text-align: center;
 }
 
 .swiper-slide:nth-child(2n)>div {
     background-color: var(--light);
+    color: var(--black);
+}
+
+.swiper-slide.header>div {
+    grid-area: head;
+    color: var(--primary);
 }
