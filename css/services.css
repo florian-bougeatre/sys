@@ -1,12 +1,13 @@
 main {
-    margin: 2rem;
     width: 100%;
     height: 100%;
     padding: 2rem;
 }
 
 .swiper-container {
-    width: 70rem;
+    width: 100rem;
+    min-width: 70rem;
+    max-width: 100rem;
     height: 100%;
 }
 
