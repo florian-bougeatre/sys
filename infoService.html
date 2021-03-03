@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/autre.css">
-    <link rel="stylesheet" type="text/css" href="css/services.css">
+    <link rel="stylesheet" type="text/css" href="css/infoservices.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="shortcut icon" href="images/sysphere/cropped-Logo-sysphere-bleu-foncé.png" type="image/x-icon">
@@ -49,41 +49,25 @@
     <main>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide header">
-                    <div>TITRE DE SECTION</div>
-                </div>
                 <div class="swiper-slide">
-                    <div class="img"><img src="https://image.shutterstock.com/shutterstock/photos/124762636/display_1500/stock-vector-server-virtualization-diagram-sever-servers-consolidated-into-one-with-text-labels-of-the-124762636.jpg" alt=""></div>
-                    <div class="txt">
-                        <h1>Machines Virtuelles</h1>
-                        <p>Une machine virtuelle est un fichier informatique, généralement appelé image, qui se comporte comme un ordinateur réel. En d’autres termes, il s’agit d’un ordinateur créé à l’intérieur d’un ordinateur.</p>
-                        <div class="buttons">
-                            <a href="infoService.html">Informations</a>
-                            <a>Commander</a>
+                    <div class="gauche">
+                        <div>
+                            <h1>Nom du produit</h1>
                         </div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, magnam! Doloremque, rem laboriosam recusandae quo atque iusto, dolorum nostrum laborum excepturi ipsa ex totam. Atque mollitia et quam eligendi asperiores?</p>
+                            <p>Modi illum saepe, deserunt aperiam nisi repudiandae eligendi iure nobis quisquam repellat voluptates quo consequatur quae dolorum minima ratione veniam cumque molestias tenetur quaerat numquam excepturi iusto fuga. Eum, fugiat!</p>
+                            <p>Molestiae unde explicabo quisquam et alias ab dolore blanditiis fuga temporibus fugit veritatis deserunt quidem magnam ipsum ex aliquid repudiandae, accusamus modi, asperiores dolorum excepturi cum quasi. Voluptas, optio veniam?</p>
+                            <p>Iure debitis numquam iste nobis exercitationem, consectetur omnis officiis, tempore voluptatibus ex dignissimos sit laudantium voluptas? Esse facilis, sunt laborum, accusantium aliquam consequatur fugiat molestiae sint culpa
+                                excepturi error asperiores.</p>
+                        </div>
+                    </div>
+                    <div class="droite">
+                        <img src="https://image.shutterstock.com/shutterstock/photos/124762636/display_1500/stock-vector-server-virtualization-diagram-sever-servers-consolidated-into-one-with-text-labels-of-the-124762636.jpg" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide">
-                    <div class="img"><img src="https://image.shutterstock.com/shutterstock/photos/124762636/display_1500/stock-vector-server-virtualization-diagram-sever-servers-consolidated-into-one-with-text-labels-of-the-124762636.jpg" alt=""></div>
-                    <div class="txt">
-                        <h1>Machines Virtuelles</h1>
-                        <p>Une machine virtuelle est un fichier informatique, généralement appelé image, qui se comporte comme un ordinateur réel. En d’autres termes, il s’agit d’un ordinateur créé à l’intérieur d’un ordinateur.</p>
-                        <div class="buttons">
-                            <a href="infoService.html">Informations</a>
-                            <a>Commander</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="img"><img src="https://image.shutterstock.com/shutterstock/photos/124762636/display_1500/stock-vector-server-virtualization-diagram-sever-servers-consolidated-into-one-with-text-labels-of-the-124762636.jpg" alt=""></div>
-                    <div class="txt">
-                        <h1>Machines Virtuelles</h1>
-                        <p>Une machine virtuelle est un fichier informatique, généralement appelé image, qui se comporte comme un ordinateur réel. En d’autres termes, il s’agit d’un ordinateur créé à l’intérieur d’un ordinateur.</p>
-                        <div class="buttons">
-                            <a href="infoService.html">Informations</a>
-                            <a>Commander</a>
-                        </div>
-                    </div>
+                    <h1>HELLO</h1>
                 </div>
             </div>
             <!-- Add Pagination -->
@@ -103,13 +87,6 @@
         const swiper = new Swiper('.swiper-container', {
             roundLengths: true,
             direction: 'vertical',
-            loop: true,
-            // autoplay: {
-            //     delay: 5000,
-            //     disableOnInteraction: false,
-            // },
-            slidesPerView: 3,
-            spaceBetween: 20,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
