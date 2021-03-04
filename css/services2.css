@@ -1,0 +1,134 @@
+main {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>div {
+    background-color: var(--dark);
+    padding: 3rem;
+    border-radius: 20px;
+    width: 50%;
+    height: 90%;
+    overflow-y: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.50);
+}
+
+main>div>h1 {
+    color: var(--white);
+}
+
+main>div>h1>i {
+    margin-right: 2rem;
+}
+
+#services h1 {
+    background-color: var(--light);
+    display: flex !important;
+    align-items: center;
+    justify-content: start;
+    outline: 1px solid var(--dark);
+    outline-offset: -5px;
+}
+
+#services h1>span:first-of-type {
+    margin-right: 1rem;
+}
+
+#services h1:hover {
+    background-color: var(--primary);
+    border-color: var(--dark);
+    color: var(--white);
+    outline: 1px solid var(--white);
+}
+
+.ui-state-active {
+    background-color: var(--primary) !important;
+    border-color: var(--dark) !important;
+    color: var(--white) !important;
+    outline: 1px solid var(--white) !important;
+}
+
+#services>div {
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.50);
+    border: none !important;
+    color: var(--black) !important;
+}
+
+.ui-accordion-content-active {
+    display: flex !important;
+    flex-direction: column;
+}
+
+.buttons {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.buttons>a {
+    transition: var(--transitionSpeed);
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    width: 12rem;
+    border-radius: 1rem;
+    font-size: larger;
+    padding: 0.5rem;
+    color: var(--white) !important;
+    background-color: var(--dark);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.50));
+}
+
+.buttons>a:hover {
+    background-color: var(--primary);
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+#services h1>div>span {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: orange;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+#services h1>div:first-of-type {
+    margin-left: 2rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+#services h1>div:first-of-type>span {
+    display: inline-block;
+    border-radius: 0;
+    height: 1rem;
+    width: 0.25rem;
+    background-color: var(--dark);
+    box-shadow: inset 1px 1px 1px rgb(184, 183, 183);
+}
+
+#services h1>div:last-child {
+    margin-left: auto;
+}
+
+#services h1>div:last-child>span:first-child {
+    background-color: yellowgreen;
+}
+
+#services h1>div:last-child>span:last-child {
+    background-color: orangered;
+}
+
+#services>div p {
+    text-align: justify;
+}
