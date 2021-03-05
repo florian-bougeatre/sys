@@ -92,40 +92,46 @@ main>div>h1>i {
     box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-#services h1>div>span {
-    display: inline-block;
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background: orange;
-    margin-left: 0.25rem;
-    margin-right: 0.25rem;
-}
-
-#services h1>div:first-of-type {
+.air {
     margin-left: 2rem;
     display: inline-flex;
     align-items: center;
 }
 
-#services h1>div:first-of-type>span {
+.air>span {
     display: inline-block;
     border-radius: 0;
     height: 1rem;
     width: 0.25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
     background-color: var(--dark);
     box-shadow: inset 1px 1px 1px rgb(184, 183, 183);
 }
 
-#services h1>div:last-child {
+.lights {
     margin-left: auto;
 }
 
-#services h1>div:last-child>span:first-child {
+.lights>span {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--dark);
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.lights>.orange {
+    background-color: orange;
+}
+
+.lights>.green {
     background-color: yellowgreen;
 }
 
-#services h1>div:last-child>span:last-child {
+.lights>span.red {
     background-color: orangered;
 }
 
